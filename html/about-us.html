@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bodain | About</title>
+  <script src="../public/jquery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="../public/css/bootstrap.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/main.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/all.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.min.css">
+  <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal();
+            });
+            $("#register").click(function(){
+                $("#modalRegister").modal();
+            });
+        });
+        function showPass()
+        {
+            var x = document.getElementById("password");
+            if(x.type === "password")
+            {
+                x.type = "text";
+            }
+            else 
+            {
+                x.type = "password";
+            }
+        }
+
+    </script> 
+</head>
+
+<body style="overflow: auto">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Bodian Space</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorite.html">
+              <i class="fa fa-heart"></i>
+              Favorite
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="myBtn" href="#">
+              <i class="fas fa-sign-in-alt"></i> Login</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="about-us.html">
+              <i class="fa fa-users"></i> About Us</a>
+          </li>
+          <li class="nav-item" style="align-content: center;">
+                <a href="post.html">
+                        <Button id="pill-button" id="myPost" style="margin: 5px">
+                                <i class="fa fa-plus"></i> Post New Ads
+                        </Button>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="margin-top:50px"></div>
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">OUR TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="../images/Hay Dane.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Hay Dane</h4>
+                                    <p class="card-text">Developer at HDG Co.</p>
+                                    <p class="quote-p" style="font-style: italic">invincible girl</p>
+                                    <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Hay Dane</h4>
+                                    <p class="card-text">I am Hay Dane, a year four student majoring in Computer Science from Royal University of Phnom Penh.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/hay.dane.7">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://plus.google.com/u/0/111535439329494801910">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/hay.dane/">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/haydane9">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:+85599266678">
+                                                <i class="fas fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="../images/Pheaktra.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Chhorn Sopheaktra</h4>
+                                    <p class="card-text">Developer at Yello VG</p>
+                                    <p class="quote-p" style="font-style: italic">Vlogger</p>
+                                    <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Chhorn Sopheaktra</h4>
+                                    <p class="card-text">I am Chhorn Sopheaktra, a year four student majoring in Computer Science from Royal University of Phnom Penh.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/hay.dane.7">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://plus.google.com/u/0/111535439329494801910">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/hay.dane/">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/haydane9">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="../images/Chhorng.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Mut Pengchhorng</h4>
+                                    <p class="card-text">Developer at RUPP</p>
+                                    <p class="quote-p" style="font-style: italic">Hello World</p>
+                                    <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Mut Pengchhorng</h4>
+                                    <p class="card-text">I am Hay Dane, a year four student majoring in Computer Science from Royal University of Phnom Penh.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/hay.dane.7">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://plus.google.com/u/0/111535439329494801910">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/hay.dane/">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/haydane9">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+            <!-- login -->
+        <div class="container">       
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header" style="padding:35px 50px; width: 100%">
+                        <h4><i class="fas fa-lock"></i> Login</h4>
+                        <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="usrname"><i class="fas fa-user"></i> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="psw"><i class="fas fa-lock"></i> Password</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                          </div>
+                          <div style="margin-right: 5px" class="checkbox">
+                            <label><input type="checkbox" value="" checked> Remember me</label>
+                          </div>
+                            <button type="submit" class="btn btn-dark btn-block"><i class="fas fa-power-off"></i></span> Login</button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><i class="fas fa-window-close"></i></span> Cancel</button> -->
+                        <p>Not a member? <a id="register" href="#">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+            <!-- register -->
+            <div class="container">       
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalRegister" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header" style="padding:35px 50px; width: 100%">
+                            <h4><i class="fas fa-lock"></i> Register</h4>
+                            <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body" style="padding:40px 50px;">
+                            <form role="formRegister">
+                              <div class="form-group">
+                                <label for="usrname"><i class="fas fa-user"></i> Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="psw"><i class="fas fa-lock"></i> Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password">
+                              </div>
+                              <div class="form-group">
+                                <label for="psw"><i class="fas fa-lock"></i> Retype-Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="retype-password">
+                              </div>
+                              <div style="margin-right: 5px" class="checkbox">
+                                <label><input type="checkbox" onclick="showPass()" > Show Password</label>
+                              </div>
+                                <button type="submit" class="btn btn-dark btn-block"><i class="fas fa-power-off"></i></span> Register</button>
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+
+            
+
+        </div>
+    </div>
+</section>
+<!-- Team -->  <script src="../public/js/bootstrap.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/all.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.min.js"></script>
+</body>
+
+</html>

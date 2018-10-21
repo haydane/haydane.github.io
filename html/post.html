@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bodian | Post</title>
+  <script src="../public/jquery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="../public/css/bootstrap.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/main.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/all.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.css">
+  <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+      <div class="container">
+          <a class="navbar-brand" href="../html/index.html">Bodian Space</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">
+                          <i class="fa fa-home"></i>
+                          Home
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="favorite.html">
+                          <i class="fa fa-heart"></i> Favorite</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="/users/logout">
+                          <i class="fa fa-sign-out"></i> Logout
+                      </a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a class="nav-link" id="myBtn" href="#">
+                          <i class="fas fa-sign-in-alt"></i> Login</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">
+                          <i class="fa fa-users"></i> About Us</a>
+                  </li>
+                  <li class="nav-item" style="align-content: center;">
+                      <a href="post.html">
+                          <Button id="pill-button" id="myPost" style="margin: 5px">
+                                  <i class="fa fa-plus"></i> Post New Ads
+                          </Button>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container" style="margin-top:70px;">  
+    <form action="">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" maxlength="30" name="title" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="">Price</label>
+              <input type="number" name="price" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="">Status</label>
+              <select name="status" class="form-control">
+                <option value="rent">For Rent</option>
+                <option value="sale ">For Sale</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="">Choose a Photo</label>
+              <input type="file" name="price" class="form-control">
+          </div>
+          <h1 for="">Specification</h1>
+          <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label>air-conditioner</label>
+                  <input type="number" name="air-conditioer" class="form-control" placeholder="optional">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label>bathroom</label>
+                  <input type="number" name="bathroom" class="form-control" placeholder="optional">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label>car parking</label>
+                  <input type="number" name="car-parking" class="form-control" placeholder="optional">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label>kitchen</label>
+                  <input type="number" name="kitchen" class="form-control" placeholder="optional">
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label>table</label>
+                    <input type="number" name="table" class="form-control" placeholder="optional">
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label>chair</label>
+                    <input type="number" name="chair" class="form-control" placeholder="optional">
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label>lamp</label>
+                    <input type="number" name="lamp" class="form-control" placeholder="optional">
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label>television</label>
+                    <input type="number" name="television" class="form-control" placeholder="optional">
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>map-link</label>
+            <input type="text" class="form-control" name="map-link" placeholder="map embedded link (optional)">
+          </div>
+          <div class="form-group">
+              <label>youtube-link</label>
+              <input type="text" class="form-control" name="youtube-link" placeholder="youtube embedded link (optional)">
+            </div>
+            <button class="btn btn-success">Post Ads</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+</body>
+  <script src="../public/js/bootstrap.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/all.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.js"></script>
+  <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.min.js"></script>
+</html>

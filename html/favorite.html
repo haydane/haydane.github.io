@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bodain | Home</title>
+    <script src="../public/jquery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/all.css">
+    <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../public/fontawesome-free-5.3.1-web/css/fontawesome.min.css">
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+            $(document).ready(function(){
+                $("#myBtn").click(function(){
+                    $("#myModal").modal();
+                });
+                $("#register").click(function(){
+                    $("#modalRegister").modal();
+                });
+            });
+            function showPass()
+            {
+                var x = document.getElementById("password");
+                if(x.type === "password")
+                {
+                    x.type = "text";
+                }
+                else 
+                {
+                    x.type = "password";
+                }
+            }
+    
+        </script> 
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../html/index.html">Bodian Space</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa fa-home"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="favorite.html">
+                            <i class="fa fa-heart"></i> Favorite</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="myBtn" href="#">
+                            <i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">
+                            <i class="fa fa-users"></i> About Us</a>
+                    </li>
+                    <li class="nav-item" style="align-content: center;">
+                        <a href="post.html">
+                                <Button id="pill-button" id="myPost" style="margin: 5px">
+                                        <i class="fa fa-plus"></i> Post New Ads
+                                </Button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- rental room list  -->
+    <div class="container" style="margin-top:73px">
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-1" style="align-self: center">
+                <p style="align-self: center;font-weight: bold;">Filter:</p>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="all" style="font-size:19px">All</option>
+                        <option value="sale" style="font-size:19px">Sale</option>
+                        <option value="rent" style="font-size:19px">Rent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="all" style="font-size:19px">All</option>
+                        <option value="co-working-space" style="font-size:19px">co-working space</option>
+                        <option value="private office" style="font-size:19px">office</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="all" style="font-size:19px">Phnom Penh</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="../html/roomDetails.html" style="text-decoration: none; color: #000">
+                    <div class="card">
+                        <span class="span-cover-green">For Rent</span>
+                        <img class="center-cropped" src="../images/1.jpg" class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                            <h3 class="card-text">Sokha Hotel</h3>
+                            <h5 style="font-weight: bold">$24.99</h5>
+                            <i class="fas fa-location-arrow"></i> Phnom Penh
+                        </div>
+                        <div class="card-footer">
+                            <div class="fb-like" data-href="https://www.fb.com/hay.dane.7" data-layout="button_count"
+                                data-action="recommend" data-size="small" data-show-faces="true" data-share="true"></div>
+                            <i style="float: right;color:red;" class="fa fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br>            
+        </div>
+        <!-- login -->
+        <div class="container">       
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header" style="padding:35px 50px; width: 100%">
+                        <h4><i class="fas fa-lock"></i> Login</h4>
+                        <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="usrname"><i class="fas fa-user"></i> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="psw"><i class="fas fa-lock"></i> Password</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                          </div>
+                          <div style="margin-right: 5px" class="checkbox">
+                            <label><input type="checkbox" value="" checked> Remember me</label>
+                          </div>
+                            <button type="submit" class="btn btn-dark btn-block"><i class="fas fa-power-off"></i></span> Login</button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><i class="fas fa-window-close"></i></span> Cancel</button> -->
+                        <p>Not a member? <a id="register" href="#">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+            <!-- register -->
+            <div class="container">       
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalRegister" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header" style="padding:35px 50px; width: 100%">
+                            <h4><i class="fas fa-lock"></i> Register</h4>
+                            <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body" style="padding:40px 50px;">
+                            <form role="formRegister">
+                              <div class="form-group">
+                                <label for="usrname"><i class="fas fa-user"></i> Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="psw"><i class="fas fa-lock"></i> Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password">
+                              </div>
+                              <div class="form-group">
+                                <label for="psw"><i class="fas fa-lock"></i> Retype-Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="retype-password">
+                              </div>
+                              <div style="margin-right: 5px" class="checkbox">
+                                <label><input type="checkbox" onclick="showPass()" > Show Password</label>
+                              </div>
+                                <button type="submit" class="btn btn-dark btn-block"><i class="fas fa-power-off"></i></span> Register</button>
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+        <script src="../public/js/bootstrap.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
+        <script src="../public/fontawesome-free-5.3.1-web/js/all.js"></script>
+        <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.js"></script>
+        <script src="../public/fontawesome-free-5.3.1-web/js/fontawesome.min.js"></script>
+</body>
+
+</html>
